@@ -11,15 +11,17 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="./js/scripts.js"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
+    <body >
         <!-- Navigation-->
-        <nav style="background-color:#5222D0;" class="navbar navbar-expand-lg  text-uppercase fixed-top" id="mainNav">
+        <nav style="background-image: repeating-linear-gradient( 
+            45deg, #3c81f6, #9d55ff 20%, #833ab4 40%, #c13584 60%, #e1306c 80%, #fd1d1d);" class="navbar navbar-expand-lg  text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">PORTFOLIO</a>
                 <button style="background-color: black;" class="navbar-toggler text-uppercase font-weight-bold  text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,33 +39,33 @@
         </nav>
         <!-- Masthead-->
         <header  style="background-color:black;" class="masthead  text-white text-center">
-            <div class="container d-flex align-items-center flex-row">
+            <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                
+                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_fGseie.json" id="landingProfile"  background="#000000" speed="1"  style="width: fit-content; height: 400px; margin-top:-50px; "  loop  autoplay></lottie-player>
             
                 <!-- Masthead Heading-->
                 <div class=flex-column>
-                <h1 class="masthead-heading text-uppercase mb-0">PRATIKSHA GUPTA</h1>
+                <h1 class="masthead-heading text-uppercase mb-0" >PRATIKSHA GUPTA</h1>
                 <!-- Icon Divider-->
                  <div  class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                 </div> 
                 <!-- Masthead Subheading-->
                 <p class="masthead-subheading font-weight-light mb-0">FULL STACK DEVELOPER- PRODUCT ENTHUSIAST</p>
-                </div>
-                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_fGseie.json"   background="#000000" speed="1"  style="width: 500px; height: 500px;  "  loop  autoplay></lottie-player>
+                
+                </div> 
+              
             </div>
         </header>
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 style="color: black;" class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Case Studies</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
-                    <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div> -->
+                
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
@@ -73,7 +75,8 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_nzzhby8h.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop  autoplay></lottie-player>
+                            <img class="img-fluid" style="width:250px; height:250px;" src="assets/img/portfolio/doubtnut.jpg" alt="..." />
+                            <h3> PM School doubtnut Challenge</h3>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -82,7 +85,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <!-- <img class="img-fluid" src="assets/img/portfolio/plan.svg" alt="..." /> -->
+                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -91,11 +94,11 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_2s77jnp4.json" background="transparent" speed="1" style="width: 400px; height: 300px;" loop  autoplay></lottie-player>
+                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -104,16 +107,16 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <!-- <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
                         </div>
-                    </div> -->
-                    
-                    <!-- <div class="col-md-6 col-lg-4">
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -121,9 +124,10 @@
                             <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
+        
         <!-- About Section-->
         <section style="background-color:black;" class="page-section  text-white mb-0" id="about">
             <div class="container">
@@ -159,7 +163,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                       
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="contactForm" >
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
@@ -192,9 +196,7 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -254,10 +256,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/idea.svg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -286,10 +285,7 @@
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -306,22 +302,19 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
+                                 
                                     <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Portfolio Info</h2>
-                                    <!-- Icon Divider-->
+                                   
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
+                                    
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/plan.svg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
+                                    
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
-                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
