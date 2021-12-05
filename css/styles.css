@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+
+
+
  hr.star-light,
  hr.star-primary {
    padding: 0;
@@ -11416,7 +11419,6 @@ html {
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
-    font-size: 1.75em;
     transition: font-size 0.3s;
   }
   #mainNav .navbar-nav {
@@ -11430,7 +11432,6 @@ html {
     color: #fff;
     background: black;
   }
-
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -11464,28 +11465,14 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
+  background-image: repeating-linear-gradient(
+45deg, #3c81f6, #9d55ff 20%, #833ab4 40%, #c13584 60%, #e1306c 80%, #fd1d1d);
+    color: #fff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
-}
-.masthead .masthead-avatar {
-  width: 15rem;
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
-}
-.portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -11494,12 +11481,12 @@ html {
   overflow: hidden;
 }
 .portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(203,100,95,0.7);
+  background-color: rgba(203,100,95,0.7); */
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11534,3 +11521,8 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+  
+
+
+
